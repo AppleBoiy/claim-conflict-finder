@@ -1,0 +1,95 @@
+{
+ "schema": "research-suite/claims@1",
+ "aliases": {
+  "ma": "method a"
+ },
+ "claims": [
+  {
+   "id": "C001",
+   "paper": "fixture2010paper",
+   "statement": "Statement 1",
+   "subject": "method A",
+   "relation": "outperforms",
+   "object": "method B",
+   "direction": "positive",
+   "quote": "a short quote",
+   "source_text": "full-text",
+   "confidence": "high",
+   "metric": "accuracy",
+   "value": 0.9,
+   "comparison_value": 0.8,
+   "dataset": "D1",
+   "method": "benchmark"
+  },
+  {
+   "id": "C002",
+   "paper": "fixture2011paper",
+   "statement": "Statement 2",
+   "subject": "method B",
+   "relation": "outperforms",
+   "object": "MA",
+   "direction": "positive",
+   "quote": "a short quote",
+   "source_text": "full-text",
+   "confidence": "high",
+   "metric": "accuracy",
+   "value": 0.85,
+   "comparison_value": 0.8,
+   "dataset": "D1",
+   "method": "benchmark"
+  },
+  {
+   "id": "C003",
+   "paper": "fixture2012paper",
+   "statement": "Statement 3",
+   "subject": "method A",
+   "relation": "is comparable to",
+   "object": "method B",
+   "direction": "null",
+   "quote": "a short quote",
+   "source_text": "full-text",
+   "confidence": "high",
+   "metric": "accuracy",
+   "dataset": "D2",
+   "method": "benchmark"
+  },
+  {
+   "id": "C004",
+   "paper": "fixture2013paper",
+   "statement": "Statement 4",
+   "subject": "method A",
+   "relation": "increases",
+   "object": "training cost",
+   "direction": "positive",
+   "quote": "a short quote",
+   "source_text": "full-text",
+   "confidence": "high",
+   "value": 2.0
+  },
+  {
+   "id": "C005",
+   "paper": "fixture2014paper",
+   "statement": "Statement 5",
+   "subject": "method A",
+   "relation": "increases",
+   "object": "training costs",
+   "direction": "positive",
+   "quote": "a short quote",
+   "source_text": "full-text",
+   "confidence": "high",
+   "value": 8.0
+  },
+  {
+   "id": "C006",
+   "paper": "fixture2015paper",
+   "statement": "Statement 6",
+   "subject": "method A",
+   "relation": "increases",
+   "object": "robustness",
+   "direction": "mixed",
+   "quote": "a short quote",
+   "source_text": "full-text",
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__ · Conflict map</title>
+<style>
+:root{
+  --bg:#f7f4ee; --panel:#fffdf8; --ink:#1d1b18; --muted:#6b655c; --line:#ddd6c9; --chip:#efe9dd; --accent:#8a3b12;
+  --pos:#1f7a6d; --neg:#b4432a; --nul:#8a8478; --mix:#b0861b; --hl:#fde7c8;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Thai",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#15140f; --panel:#1d1b16; --ink:#ece6da; --muted:#a59e91; --line:#3a362e; --chip:#2a2720; --accent:#f0a46d;
+    --pos:#4fc3ae; --neg:#f07a5c; --nul:#8f897d; --mix:#e2c05a; --hl:#4a3a22; }
+}
+:root[data-theme="dark"]{ --bg:#15140f; --panel:#1d1b16; --ink:#ece6da; --muted:#a59e91; --line:#3a362e; --chip:#2a2720; --accent:#f0a46d;
+  --pos:#4fc3ae; --neg:#f07a5c; --nul:#8f897d; --mix:#e2c05a; --hl:#4a3a22; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 var(--sans)}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 80px}
+.eyebrow{font:600 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:600 30px/1.2 var(--serif);margin:10px 0 6px;overflow-wrap:anywhere}
+h2{font:600 22px/1.25 var(--serif);margin:44px 0 6px}
+.sub{color:var(--muted);margin:0 0 14px}
+.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.iconbtn{font:inherit;font-size:12.5px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);cursor:pointer}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:22px 0 6px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.tile .n{font:600 30px/1 var(--serif)}
+.tile .l{color:var(--muted);font-size:12.5px;margin-top:6px}
+.tile.alert .n{color:var(--neg)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:12.5px;margin:10px 0 14px}
+.g{display:inline-block;width:16px;text-align:center;font-weight:700}
+.g.positive{color:var(--pos)} .g.negative{color:var(--neg)} .g.null{color:var(--nul)} .g.mixed{color:var(--mix)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 12px}
+.filters button{font:inherit;font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.mx{overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);max-height:70vh}
+table{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:0}
+thead th{position:sticky;top:0;background:var(--panel);z-index:2;vertical-align:bottom}
+th.p{width:40px;height:120px}
+th.p div{writing-mode:vertical-rl;transform:rotate(180deg);font:500 11.5px var(--sans);color:var(--muted);padding:8px 0;margin:0 auto;white-space:nowrap;max-height:112px;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+th.p div:hover{color:var(--accent)}
+.tc{position:sticky;left:0;background:var(--panel);z-index:1;min-width:280px;max-width:340px;padding:10px 14px;border-right:1px solid var(--line)}
+thead .tc{z-index:3;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);vertical-align:bottom}
+.tl{font-size:13.5px;line-height:1.35}
+.pill{display:inline-block;font-size:11px;border-radius:999px;padding:1px 8px;margin-top:5px;background:var(--chip);color:var(--ink)}
+.pill.contested{background:var(--neg);color:#fff}
+.pill.context-dependent{background:transparent;border:1px solid var(--neg);color:var(--neg)}
+.pill.consensus{background:transparent;border:1px solid var(--pos);color:var(--pos)}
+.bal{display:flex;height:5px;border-radius:3px;overflow:hidden;margin-top:7px;background:var(--chip);max-width:180px}
+.bal i{display:block}
+td.c{text-align:center;width:40px;height:46px;cursor:default}
+td.c.has{cursor:pointer}
+td.c.has:hover{background:var(--hl)}
+td.c span{font-size:15px;line-height:1}
+td.c.sel{outline:2px solid var(--accent);outline-offset:-2px}
+.cards{display:grid;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.card .hd{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.card .topic{font:600 16px/1.3 var(--serif);margin-right:auto}
+.badge{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;padding:3px 8px;border-radius:5px;background:var(--chip)}
+.badge.high{background:var(--neg);color:#fff} .badge.medium{border:1px solid var(--neg);color:var(--neg);background:transparent}
+.badge.genuine{background:var(--ink);color:var(--bg)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch}
+.side{border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.side .who{font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.side .who a{color:var(--accent)}
+.side .st{font:15px/1.45 var(--serif)}
+.side q{display:block;margin-top:8px;color:var(--muted);font:italic 13.5px/1.45 var(--serif)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin-top:10px;font-size:12.5px}
+.kv dt{color:var(--muted)} .kv dd{margin:0}
+.kv dd.diff{background:var(--hl);border-radius:3px;padding:0 4px}
+.mid{display:flex;align-items:center;font:600 13px var(--mono);color:var(--muted)}
+.why{margin-top:12px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--chip);border-radius:0 8px 8px 0;font-size:13.5px}
+.empty{color:var(--muted);padding:20px;text-align:center;border:1px dashed var(--line);border-radius:10px}
+#drawer{position:fixed;right:16px;bottom:16px;width:min(420px,calc(100vw - 32px));max-height:70vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.18);padding:16px 18px;display:none;z-index:10}
+#drawer .x{float:right;cursor:pointer;border:0;background:none;color:var(--muted);font-size:18px}
+.foot{color:var(--muted);font-size:12px;margin-top:40px}
+@media (max-width: 760px){
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vs{grid-template-columns:1fr}
+  .mid{justify-content:center}
+  .tc{min-width:200px;max-width:220px}
+  h1{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="eyebrow">Conflict map · claim-conflict-finder</div>
+      <h1 id="title">__TITLE__</h1>
+      <p class="sub" id="meta"></p>
+    </div>
+    <button class="iconbtn" id="theme" title="Toggle theme">◐</button>
+  </div>
+  <div class="tiles" id="tiles"></div>
+
+  <h2>Evidence matrix</h2>
+  <p class="sub">Each row is a relationship that two or more papers make a claim about; each column is a paper, oldest on the left. Marks read against the row's wording: ▲ under “A outperforms B” means the paper agrees; ▼ means it found the opposite. Click a mark to read the claim.</p>
+  <div class="legend">
+    <span><span class="g positive">▲</span> positive / better / increases</span>
+    <span><span class="g negative">▼</span> negative / worse / decreases</span>
+    <span><span class="g null">●</span> no effect / no difference</span>
+    <span><span class="g mixed">◆</span> depends on conditions</span>
+  </div>
+  <div class="filters" id="vf"></div>
+  <div class="mx"><table id="mx"></table></div>
+
+  <h2>Where papers disagree</h2>
+  <p class="sub">Pairs are ranked by importance. <b>Genuine</b> means the two papers report the same kind of setup yet reach different answers — read both. The others are probably explained by a difference in context, highlighted in yellow.</p>
+  <div class="filters" id="cf"></div>
+  <div class="cards" id="cards"></div>
+  <p class="foot" id="foot"></p>
+</div>
+<div id="drawer" role="dialog" aria-label="Claim details"></div>
+<script>
+const DATA = /*__DATA__*/null;
+(function(){
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const P = Object.fromEntries(DATA.papers.map(p => [p.key, p]));
+const C = DATA.claims;
+const G = {positive:"▲", negative:"▼", null:"●", mixed:"◆"};
+const dir = c => c.direction_canonical || c.direction;
+const real = DATA.pairs.filter(p => p.kind !== "agreement");
+const genuine = real.filter(p => p.genuine);
+const multi = DATA.topics.filter(t => t.verdict !== "single-source");
+document.title = DATA.title + " · Conflict map";
+$("#meta").textContent = `${Object.keys(C).length} claims from ${DATA.papers.length} papers · generated ${DATA.generated}` + (DATA.query && DATA.query !== DATA.title ? ` · Question: ${DATA.query}` : "");
+$("#tiles").innerHTML = [
+  [Object.keys(C).length, "claims extracted"],
+  [multi.length, "relationships studied by 2+ papers"],
+  [DATA.topics.filter(t => t.verdict === "contested" || t.verdict === "context-dependent").length, "relationships in dispute", true],
+  [genuine.length, "genuine conflicts to read closely", true]
+].map(([n, l, a]) => `<div class="tile${a && n ? " alert" : ""}"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+
+// ---------- matrix
+const verdicts = ["all", ...new Set(DATA.topics.map(t => t.verdict))];
+let vsel = multi.length ? "multi" : "all";
+function vfilters(){
+  const opts = [["multi", "2+ papers"], ...verdicts.map(v => [v, v])];
+  $("#vf").innerHTML = opts.map(([k, l]) => `<button data-v="${esc(k)}" aria-pressed="${k === vsel}">${esc(l)}</button>`).join("");
+  document.querySelectorAll("#vf button").forEach(b => b.onclick = () => { vsel = b.dataset.v; vfilters(); matrix(); });
+}
+function matrix(){
+  const topics = DATA.topics.filter(t => vsel === "all" ? true : vsel === "multi" ? t.verdict !== "single-source" : t.verdict === vsel);
+  const keys = new Set(topics.flatMap(t => t.papers));
+  const cols = DATA.papers.filter(p => keys.has(p.key));
+  if (!topics.length){ $("#mx").innerHTML = `<tr><td class="empty">No relationships match this filter.</td></tr>`; return; }
+  let h = `<thead><tr><th class="tc">Relationship</th>${cols.map(p => `<th class="p"><div data-k="${esc(p.key)}" title="${esc(p.cite + " — " + p.title)}">${esc(p.short)}</div></th>`).join("")}</tr></thead><tbody>`;
+  for (const t of topics){
+    const d = t.directions, tot = Object.values(d).reduce((a, b) => a + b, 0) || 1;
+    const bal = ["positive", "null", "mixed", "negative"].map(k => d[k] ? `<i style="width:${100 * d[k] / tot}%;background:var(--${k === "positive" ? "pos" : k === "negative" ? "neg" : k === "null" ? "nul" : "mix"})"></i>` : "").join("");
+    h += `<tr><td class="tc"><div class="tl">${esc(t.label)}</div><span class="pill ${esc(t.verdict)}">${esc(t.verdict)}</span><div class="bal">${bal}</div></td>`;
+    for (const p of cols){
+      const cs = t.claims.map(id => C[id]).filter(c => c.paper === p.key);
+      h += cs.length ? `<td class="c has" data-ids="${esc(cs.map(c => c.id).join(","))}">${cs.map(c => `<span class="g ${dir(c)}">${G[dir(c)] || "?"}</span>`).join("")}</td>` : `<td class="c"></td>`;
+    }
+    h += `</tr>`;
+  }
+  $("#mx").innerHTML = h + "</tbody>";
+  document.querySelectorAll("#mx td.has").forEach(td => td.onclick = () => {
+    document.querySelectorAll("#mx td.sel").forEach(x => x.classList.remove("sel")); td.classList.add("sel");
+    drawer(td.dataset.ids.split(",").map(id => C[id])); });
+  document.querySelectorAll("#mx th.p div").forEach(d => d.onclick = () => paperDrawer(P[d.dataset.k]));
+}
+function link(p){ return p.doi ? `https://doi.org/${p.doi}` : p.url; }
+function claimHTML(c, diffs = []){
+  const p = P[c.paper] || {};
+  const row = (k, label) => c[k] && (Array.isArray(c[k]) ? c[k].length : true) ? `<dt>${label}</dt><dd class="${diffs.includes(k) || diffs.includes(k + "?") ? "diff" : ""}">${esc(Array.isArray(c[k]) ? c[k].join(", ") : c[k])}</dd>` : "";
+  const val = (c.value != null) ? `<dt>result</dt><dd>${esc(c.value)}${c.comparison_value != null ? " vs " + esc(c.comparison_value) : ""} ${esc(c.unit || "")}</dd>` : "";
+  return `<div class="who">${esc(c.id)} · ${link(p) ? `<a href="${esc(link(p))}" target="_blank" rel="noopener">${esc(p.cite)}</a>` : esc(p.cite || c.paper)}${p.preprint ? " · ⚠ preprint" : ""} · <span class="g ${dir(c)}">${G[dir(c)] || ""}</span></div>
+    <div class="st">${esc(c.statement)}</div>${c.quote ? `<q>${esc(c.quote)}</q>` : ""}
+    <dl class="kv">${row("metric", "metric")}${val}${row("dataset", "dataset")}${row("population", "population")}${row("method", "method")}${row("conditions", "conditions")}${c.sample_size != null ? `<dt>n</dt><dd class="${diffs.includes("sample size") ? "diff" : ""}">${esc(c.sample_size)}</dd>` : ""}${row("evidence", "where")}<dt>confidence</dt><dd>${esc(c.confidence_used || c.confidence || "")}${c.source_text ? " · from " + esc(c.source_text) : ""}</dd></dl>`;
+}
+function drawer(cs){
+  const d = $("#drawer");
+  d.innerHTML = `<button class="x" aria-label="Close">×</button>` + cs.map(c => `<div class="side" style="margin-top:10px">${claimHTML(c)}</div>`).join("");
+  d.style.display = "block"; d.querySelector(".x").onclick = () => d.style.display = "none";
+}
+function paperDrawer(p){
+  const d = $("#drawer"); const mine = Object.values(C).filter(c => c.paper === p.key);
+  d.innerHTML = `<button class="x" aria-label="Close">×</button><div class="eyebrow">Paper</div><div style="font:600 17px/1.3 var(--serif);margin:8px 0">${esc(p.title)}</div>
+    <div class="sub">${esc(p.authors.join(", "))}${p.n_authors > p.authors.length ? " et al." : ""} · ${esc(p.venue || "")} ${p.year || ""}${p.preprint ? " · ⚠ preprint" : ""}</div>
+    ${link(p) ? `<a href="${esc(link(p))}" target="_blank" rel="noopener" style="color:var(--accent)">Open paper ↗</a>` : ""}
+    <div class="eyebrow" style="margin-top:16px">${mine.length} claims</div>${mine.map(c => `<div class="side" style="margin-top:10px">${claimHTML(c)}</div>`).join("")}`;
+  d.style.display = "block"; d.querySelector(".x").onclick = () => d.style.display = "none";
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape") $("#drawer").style.display = "none"; });
+
+// ---------- cards
+let csel = genuine.length ? "genuine" : "all";
+function cfilters(){
+  const opts = [["genuine", `genuine (${genuine.length})`], ["all", `all disagreements (${real.length})`], ["agree", `agreements (${DATA.pairs.length - real.length})`]];
+  $("#cf").innerHTML = opts.map(([k, l]) => `<button data-v="${k}" aria-pressed="${k === csel}">${esc(l)}</button>`).join("");
+  document.querySelectorAll("#cf button").forEach(b => b.onclick = () => { csel = b.dataset.v; cfilters(); cards(); });
+}
+function cards(){
+  const list = csel === "genuine" ? genuine : csel === "all" ? real : DATA.pairs.filter(p => p.kind === "agreement");
+  if (!list.length){ $("#cards").innerHTML = `<div class="empty">${csel === "genuine" ? "No genuine conflicts — every disagreement found has a context difference that may explain it." : "Nothing here."}</div>`; return; }
+  $("#cards").innerHTML = list.slice(0, 150).map(r => {
+    const t = DATA.topics.find(t => t.topic === r.topic);
+    return `<article class="card"><div class="hd"><div class="topic">${esc(t ? t.label : r.topic)}</div>
+      <span class="badge">${esc(r.kind)}</span>${r.severity !== "none" ? `<span class="badge ${esc(r.severity)}">${esc(r.severity)}</span>` : ""}${r.genuine ? `<span class="badge genuine">genuine</span>` : ""}</div>
+      <div class="vs"><div class="side">${claimHTML(C[r.a], r.differences)}</div><div class="mid">vs</div><div class="side">${claimHTML(C[r.b], r.differences)}</div></div>
+      <div class="why"><b>Why they may differ.</b> ${esc(r.explanation)}</div></article>`;
+  }).join("") + (list.length > 150 ? `<div class="empty">${list.length - 150} more in conflicts.json</div>` : "");
+}
+$("#foot").textContent = "Directions are normalised so that “B underperforms A” and “A outperforms B” line up. Claims read from abstracts only are capped at medium confidence. Verify every claim in the paper before you cite it.";
+$("#theme").onclick = () => { const r = document.documentElement, dark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const cur = r.dataset.theme || (dark ? "dark" : "light"); r.dataset.theme = cur === "dark" ? "light" : "dark"; };
+vfilters(); matrix(); cfilters(); cards();
+})();
+</script>
+</body>
+</html>

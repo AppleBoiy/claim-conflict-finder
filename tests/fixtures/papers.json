@@ -1,0 +1,106 @@
+{
+ "schema": "research-suite/papers@1",
+ "query": "Does method A beat method B?",
+ "search_terms": [
+  "method A",
+  "method B"
+ ],
+ "papers": [
+  {
+   "key": "fixture2010paper",
+   "title": "Fixture study 0",
+   "authors": [
+    "Ada Fixture0",
+    "Bo Test"
+   ],
+   "year": 2010,
+   "venue": "Journal of Fixtures",
+   "doi": "10.5555/f.0",
+   "is_preprint": false,
+   "status": "included",
+   "references": [],
+   "cited_by": 0,
+   "score": 0.5
+  },
+  {
+   "key": "fixture2011paper",
+   "title": "Fixture study 1",
+   "authors": [
+    "Ada Fixture1",
+    "Bo Test"
+   ],
+   "year": 2011,
+   "venue": "Journal of Fixtures",
+   "doi": "10.5555/f.1",
+   "is_preprint": false,
+   "status": "included",
+   "references": [],
+   "cited_by": 5,
+   "score": 0.5
+  },
+  {
+   "key": "fixture2012paper",
+   "title": "Fixture study 2",
+   "authors": [
+    "Ada Fixture2",
+    "Bo Test"
+   ],
+   "year": 2012,
+   "venue": "Journal of Fixtures",
+   "doi": "10.5555/f.2",
+   "is_preprint": false,
+   "status": "included",
+   "references": [],
+   "cited_by": 10,
+   "score": 0.5
+  },
+  {
+   "key": "fixture2013paper",
+   "title": "Fixture study 3",
+   "authors": [
+    "Ada Fixture3",
+    "Bo Test"
+   ],
+   "year": 2013,
+   "venue": "Journal of Fixtures",
+   "doi": "10.5555/f.3",
+   "is_preprint": false,
+   "status": "included",
+   "references": [],
+   "cited_by": 15,
+   "score": 0.5
+  },
+  {
+   "key": "fixture2014paper",
+   "title": "Fixture study 4",
+   "authors": [
+    "Ada Fixture4",
+    "Bo Test"
+   ],
+   "year": 2014,
+   "venue": "Journal of Fixtures",
+   "doi": "10.5555/f.4",
+   "is_preprint": true,
+   "status": "included",
+   "references": [],
+   "cited_by": 20,
+   "score": 0.5
+  },
+  {
+   "key": "fixture2015paper",
+   "title": "Fixture study 5",
+   "authors": [
+    "Ada Fixture5",
+    "Bo Test"
+   ],
+   "year": 2015,
+   "venue": "Journal of Fixtures",
+   "doi": "10.5555/f.5",
+   "is_preprint": false,
+   "status": "included",
+   "references": [],
+   "cited_by": 25,
+   "score": 0.5
+  }
+ ]
+}
