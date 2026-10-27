@@ -32,20 +32,20 @@ _Generated:_ 2026-10-27
 ### gaia-sausage-enceladus | extended star formation — contradiction (medium)
 
 - **C14** Ernandes et al. (2024) [@ernandes2024gaia]: Neutron-capture abundances show GSE star formation started gradually and lasted over 2 Gyr.
-- **C15** Plevne et al. (2025) [@plevne2025estimating]: The best chemical-evolution model needs a short star-formation timescale with strong outflows.
-- **Why they may differ:** Ernandes et al. (2024) and Plevne et al. (2025) reach opposite conclusions. Likely explained by different datasets, different methods or study designs, one is a preprint.
+- **C15** Plevne & Akbaba (2025) [@plevne2025estimating]: The best chemical-evolution model needs a short star-formation timescale with strong outflows.
+- **Why they may differ:** Ernandes et al. (2024) and Plevne & Akbaba (2025) reach opposite conclusions. Likely explained by different datasets, different methods or study designs, one is a preprint.
 
 ### gaia-sausage-enceladus | major merger — contradiction (medium)
 
 - **C04** Fragkoudi et al. (2020) [@fragkoudi2020chemodynamics]: Auriga galaxies matching the Milky Way bulge allow GSE a mass ratio of only a few per cent, i.e. a quiet merger history.
-- **C05** Plevne et al. (2025) [@plevne2025estimating]: A chemical-evolution fit gives GSE a gas mass of about 4.9×10^9 solar masses, at the high end of earlier estimates.
-- **Why they may differ:** Fragkoudi et al. (2020) and Plevne et al. (2025) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs, one is a preprint.
+- **C05** Plevne & Akbaba (2025) [@plevne2025estimating]: A chemical-evolution fit gives GSE a gas mass of about 4.9×10^9 solar masses, at the high end of earlier estimates.
+- **Why they may differ:** Fragkoudi et al. (2020) and Plevne & Akbaba (2025) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs, one is a preprint.
 
 ### in-situ stellar halo | milky way survey data — null-vs-effect (medium)
 
 - **C16** Haywood et al. (2018) [@haywood2018disguise]: Gaia DR2 halo stars split into accreted stars and heated old disc; no in-situ halo population is robustly identified.
-- **C17** Belokurov et al. (2022) [@belokurov2022dawn]: Aluminium abundances isolate a metal-poor in-situ component, 'Aurora', born before the disc spun up.
-- **Why they may differ:** Belokurov et al. (2022) finds an effect; Haywood et al. (2018) finds no significant effect. Likely explained by different datasets, different methods or study designs.
+- **C17** Belokurov & Kravtsov (2022) [@belokurov2022dawn]: Aluminium abundances isolate a metal-poor in-situ component, 'Aurora', born before the disc spun up.
+- **Why they may differ:** Belokurov & Kravtsov (2022) finds an effect; Haywood et al. (2018) finds no significant effect. Likely explained by different datasets, different methods or study designs.
 
 ## Topics
 

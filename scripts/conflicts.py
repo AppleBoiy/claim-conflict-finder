@@ -229,9 +229,10 @@ def compare(a: dict, b: dict, pa: dict, pb: dict, tol: float) -> dict:
 
 
 def cite(p: dict) -> str:
-    au = (p.get("authors") or ["Anon"])[0].split()[-1] if p.get("authors") else "Anon"
-    etal = " et al." if len(p.get("authors") or []) > 1 else ""
-    return f"{au}{etal} ({p.get('year') or 'n.d.'})"
+    a = [x for x in (p.get("authors") or []) if x]
+    first = a[0].split()[-1] if a else "Anon"
+    who = f"{first} et al." if len(a) > 2 else (f"{first} & {a[1].split()[-1]}" if len(a) == 2 else first)
+    return f"{who} ({p.get('year') or 'n.d.'})"
 
 
 def explain(kind, a, b, pa, pb, diffs, genuine) -> str:

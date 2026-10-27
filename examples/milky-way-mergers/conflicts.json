@@ -274,7 +274,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Ernandes et al. (2024) and Plevne et al. (2025) reach opposite conclusions. Likely explained by different datasets, different methods or study designs, one is a preprint.",
+      "explanation": "Ernandes et al. (2024) and Plevne & Akbaba (2025) reach opposite conclusions. Likely explained by different datasets, different methods or study designs, one is a preprint.",
       "topic": "gaia-sausage-enceladus | extended star formation"
     },
     {
@@ -289,7 +289,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Fragkoudi et al. (2020) and Plevne et al. (2025) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs, one is a preprint.",
+      "explanation": "Fragkoudi et al. (2020) and Plevne & Akbaba (2025) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs, one is a preprint.",
       "topic": "gaia-sausage-enceladus | major merger"
     },
     {
@@ -302,7 +302,7 @@
         "dataset",
         "method"
       ],
-      "explanation": "Belokurov et al. (2022) finds an effect; Haywood et al. (2018) finds no significant effect. Likely explained by different datasets, different methods or study designs.",
+      "explanation": "Belokurov & Kravtsov (2022) finds an effect; Haywood et al. (2018) finds no significant effect. Likely explained by different datasets, different methods or study designs.",
       "topic": "in-situ stellar halo | milky way survey data"
     },
     {
@@ -384,7 +384,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Belokurov et al. (2018) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "explanation": "Belokurov et al. (2018) and Plevne & Akbaba (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
       "topic": "gaia-sausage-enceladus | major merger"
     },
     {
@@ -411,7 +411,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Feuillet et al. (2020) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "explanation": "Feuillet et al. (2020) and Plevne & Akbaba (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
       "topic": "gaia-sausage-enceladus | major merger"
     },
     {
@@ -425,7 +425,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Naidu et al. (2021) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "explanation": "Naidu et al. (2021) and Plevne & Akbaba (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
       "topic": "gaia-sausage-enceladus | major merger"
     },
     {
@@ -452,7 +452,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Belokurov et al. (2018) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "explanation": "Belokurov et al. (2018) and Plevne & Akbaba (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
       "topic": "gaia-sausage-enceladus | stellar halo"
     },
     {
@@ -466,7 +466,7 @@
         "method",
         "peer review"
       ],
-      "explanation": "Naidu et al. (2021) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "explanation": "Naidu et al. (2021) and Plevne & Akbaba (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
       "topic": "gaia-sausage-enceladus | stellar halo"
     },
     {
