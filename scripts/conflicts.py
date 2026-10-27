@@ -141,10 +141,14 @@ def normalise(c: dict, aliases: dict) -> dict:
     return n
 
 
+CAUSAL = {"increases", "decreases", "affects", "improves", "reduces", "raises", "lowers", "impairs", "worsens", "changes"}
+
+
 def topic_label(n: dict) -> str:
-    if n["_r"] in COMPARATIVE or n["_r"] in SYMMETRIC:
-        return f"{n['_s']} {n['_r']} {n['_o']}"
-    return f"effect of {n['_s']} on {n['_o']}"
+    """Directional verbs read as "effect of S on O" (the direction is in the marks); others keep their wording."""
+    if n["_r"] in CAUSAL:
+        return f"effect of {n['_s']} on {n['_o']}"
+    return f"{n['_s']} {n['_r']} {n['_o']}"
 
 
 def topic_key(n: dict) -> str:

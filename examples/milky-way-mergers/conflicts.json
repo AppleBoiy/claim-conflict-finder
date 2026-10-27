@@ -1,0 +1,893 @@
+{
+  "schema": "research-suite/conflicts@1",
+  "created": "2026-10-27",
+  "query": "How are galaxy merger histories reconstructed from stellar data?",
+  "tolerance": 0.5,
+  "topics": [
+    {
+      "topic": "gaia-sausage-enceladus | major merger",
+      "subject": "gaia-sausage-enceladus",
+      "object": "major merger",
+      "relation": "was a",
+      "label": "gaia-sausage-enceladus was a major merger",
+      "claims": [
+        "C02",
+        "C03",
+        "C04",
+        "C01",
+        "C05"
+      ],
+      "papers": [
+        "belokurov2018formation",
+        "feuillet2020skymapper",
+        "fragkoudi2020chemodynamics",
+        "naidu2021reconstructing",
+        "plevne2025estimating"
+      ],
+      "directions": {
+        "positive": 4,
+        "negative": 1
+      },
+      "verdict": "context-dependent",
+      "conflicts": 4,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus | extended star formation",
+      "subject": "gaia-sausage-enceladus",
+      "object": "extended star formation",
+      "relation": "had",
+      "label": "gaia-sausage-enceladus had extended star formation",
+      "claims": [
+        "C14",
+        "C15"
+      ],
+      "papers": [
+        "ernandes2024gaia",
+        "plevne2025estimating"
+      ],
+      "directions": {
+        "positive": 1,
+        "negative": 1
+      },
+      "verdict": "context-dependent",
+      "conflicts": 1,
+      "genuine": 0
+    },
+    {
+      "topic": "in-situ stellar halo | milky way survey data",
+      "subject": "in-situ stellar halo",
+      "object": "milky way survey data",
+      "relation": "is detected in",
+      "label": "in-situ stellar halo is detected in milky way survey data",
+      "claims": [
+        "C16",
+        "C17"
+      ],
+      "papers": [
+        "belokurov2022dawn",
+        "haywood2018disguise"
+      ],
+      "directions": {
+        "null": 1,
+        "positive": 1
+      },
+      "verdict": "context-dependent",
+      "conflicts": 1,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus | gas-rich",
+      "subject": "gaia-sausage-enceladus",
+      "object": "gas-rich",
+      "relation": "was",
+      "label": "gaia-sausage-enceladus was gas-rich",
+      "claims": [
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "papers": [
+        "ciuca2023chasing",
+        "grand2020dual",
+        "valenzuela2023galaxy"
+      ],
+      "directions": {
+        "positive": 3
+      },
+      "verdict": "consensus",
+      "conflicts": 0,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus | stellar halo",
+      "subject": "gaia-sausage-enceladus",
+      "object": "stellar halo",
+      "relation": "built",
+      "label": "gaia-sausage-enceladus built stellar halo",
+      "claims": [
+        "C12",
+        "C11",
+        "C13"
+      ],
+      "papers": [
+        "belokurov2018formation",
+        "naidu2021reconstructing",
+        "plevne2025estimating"
+      ],
+      "directions": {
+        "positive": 3
+      },
+      "verdict": "consensus",
+      "conflicts": 0,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus | thick disc",
+      "subject": "gaia-sausage-enceladus",
+      "object": "thick disc",
+      "relation": "built",
+      "label": "gaia-sausage-enceladus built thick disc",
+      "claims": [
+        "C09",
+        "C10"
+      ],
+      "papers": [
+        "ciuca2023chasing",
+        "grand2020dual"
+      ],
+      "directions": {
+        "positive": 2
+      },
+      "verdict": "consensus",
+      "conflicts": 0,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus star | in-situ star",
+      "subject": "gaia-sausage-enceladus star",
+      "object": "in-situ star",
+      "relation": "exceeds",
+      "label": "gaia-sausage-enceladus star exceeds in-situ star",
+      "claims": [
+        "C21"
+      ],
+      "papers": [
+        "matsuno2021process"
+      ],
+      "directions": {
+        "positive": 1
+      },
+      "verdict": "single-source",
+      "conflicts": 0,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus | galactic disc warp",
+      "subject": "gaia-sausage-enceladus",
+      "object": "galactic disc warp",
+      "relation": "caused",
+      "label": "gaia-sausage-enceladus caused galactic disc warp",
+      "claims": [
+        "C19"
+      ],
+      "papers": [
+        "deng2024potential"
+      ],
+      "directions": {
+        "positive": 1
+      },
+      "verdict": "single-source",
+      "conflicts": 0,
+      "genuine": 0
+    },
+    {
+      "topic": "gaia-sausage-enceladus | milky way bar",
+      "subject": "gaia-sausage-enceladus",
+      "object": "milky way bar",
+      "relation": "triggered",
+      "label": "gaia-sausage-enceladus triggered milky way bar",
+      "claims": [
+        "C18"
+      ],
+      "papers": [
+        "merrow2024did"
+      ],
+      "directions": {
+        "positive": 1
+      },
+      "verdict": "single-source",
+      "conflicts": 0,
+      "genuine": 0
+    },
+    {
+      "topic": "milky way | pre-gse major merger",
+      "subject": "milky way",
+      "object": "pre-gse major merger",
+      "relation": "experienced",
+      "label": "milky way experienced pre-gse major merger",
+      "claims": [
+        "C20"
+      ],
+      "papers": [
+        "massari2026evidence"
+      ],
+      "directions": {
+        "positive": 1
+      },
+      "verdict": "single-source",
+      "conflicts": 0,
+      "genuine": 0
+    }
+  ],
+  "pairs": [
+    {
+      "a": "C02",
+      "b": "C04",
+      "kind": "contradiction",
+      "severity": "high",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Belokurov et al. (2018) and Fragkoudi et al. (2020) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C03",
+      "b": "C04",
+      "kind": "contradiction",
+      "severity": "high",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Feuillet et al. (2020) and Fragkoudi et al. (2020) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C04",
+      "b": "C01",
+      "kind": "contradiction",
+      "severity": "high",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Fragkoudi et al. (2020) and Naidu et al. (2021) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C14",
+      "b": "C15",
+      "kind": "contradiction",
+      "severity": "medium",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Ernandes et al. (2024) and Plevne et al. (2025) reach opposite conclusions. Likely explained by different datasets, different methods or study designs, one is a preprint.",
+      "topic": "gaia-sausage-enceladus | extended star formation"
+    },
+    {
+      "a": "C04",
+      "b": "C05",
+      "kind": "contradiction",
+      "severity": "medium",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Fragkoudi et al. (2020) and Plevne et al. (2025) reach opposite conclusions. Likely explained by different datasets, different populations / settings, different methods or study designs, one is a preprint.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C16",
+      "b": "C17",
+      "kind": "null-vs-effect",
+      "severity": "medium",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method"
+      ],
+      "explanation": "Belokurov et al. (2022) finds an effect; Haywood et al. (2018) finds no significant effect. Likely explained by different datasets, different methods or study designs.",
+      "topic": "in-situ stellar halo | milky way survey data"
+    },
+    {
+      "a": "C06",
+      "b": "C07",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Grand et al. (2020) and Ciucă et al. (2023) agree. The agreement holds across different datasets, different populations / settings, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | gas-rich"
+    },
+    {
+      "a": "C06",
+      "b": "C08",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Grand et al. (2020) and Valenzuela et al. (2023) agree. The agreement holds across different datasets, different populations / settings, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | gas-rich"
+    },
+    {
+      "a": "C07",
+      "b": "C08",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Ciucă et al. (2023) and Valenzuela et al. (2023) agree. The agreement holds across different datasets, different populations / settings, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | gas-rich"
+    },
+    {
+      "a": "C02",
+      "b": "C03",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method"
+      ],
+      "explanation": "Belokurov et al. (2018) and Feuillet et al. (2020) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C02",
+      "b": "C01",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method"
+      ],
+      "explanation": "Belokurov et al. (2018) and Naidu et al. (2021) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C02",
+      "b": "C05",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Belokurov et al. (2018) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C03",
+      "b": "C01",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method"
+      ],
+      "explanation": "Feuillet et al. (2020) and Naidu et al. (2021) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C03",
+      "b": "C05",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Feuillet et al. (2020) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C01",
+      "b": "C05",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Naidu et al. (2021) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | major merger"
+    },
+    {
+      "a": "C12",
+      "b": "C11",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method"
+      ],
+      "explanation": "Belokurov et al. (2018) and Naidu et al. (2021) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | stellar halo"
+    },
+    {
+      "a": "C12",
+      "b": "C13",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Belokurov et al. (2018) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | stellar halo"
+    },
+    {
+      "a": "C11",
+      "b": "C13",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "method",
+        "peer review"
+      ],
+      "explanation": "Naidu et al. (2021) and Plevne et al. (2025) agree. The agreement holds across different datasets, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | stellar halo"
+    },
+    {
+      "a": "C09",
+      "b": "C10",
+      "kind": "agreement",
+      "severity": "none",
+      "genuine": false,
+      "differences": [
+        "dataset",
+        "population",
+        "method"
+      ],
+      "explanation": "Grand et al. (2020) and Ciucă et al. (2023) agree. The agreement holds across different datasets, different populations / settings, different methods or study designs, which strengthens it.",
+      "topic": "gaia-sausage-enceladus | thick disc"
+    }
+  ],
+  "_claims": {
+    "C01": {
+      "id": "C01",
+      "paper": "naidu2021reconstructing",
+      "statement": "Tailored N-body simulations fitted to H3 data imply GSE delivered about 20% of the Milky Way's dark matter.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was a",
+      "object": "major merger",
+      "direction": "positive",
+      "quote": "These simulations imply that GSE delivered ≈20% of the Milky Way’s present-day dark matter",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "H3 Survey",
+      "method": "N-body simulations fitted to survey data",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C02": {
+      "id": "C02",
+      "paper": "belokurov2018formation",
+      "statement": "The inner-halo debris came from a single massive satellite (virial mass above 10^10 solar masses) 8–11 Gyr ago.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was a",
+      "object": "major merger",
+      "direction": "positive",
+      "quote": "a satellite with Mvir > 1010M⊙ around the epoch of the Galactic disc formation",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Gaia + SDSS",
+      "method": "halo kinematics + zoom-in simulations",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C03": {
+      "id": "C03",
+      "paper": "feuillet2020skymapper",
+      "statement": "A clean GSE sample implies a progenitor stellar mass of 10^8.85–10^9.85 solar masses, consistent with earlier estimates.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was a",
+      "object": "major merger",
+      "direction": "positive",
+      "quote": "we estimate the mass of the Gaia-Enceladus-Sausage progenitor satellite to be $10^{8.85-9.85}$ M$_{\\odot}$",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "SkyMapper + Gaia RVS",
+      "method": "metallicity distribution + mass–metallicity relation",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C04": {
+      "id": "C04",
+      "paper": "fragkoudi2020chemodynamics",
+      "statement": "Auriga galaxies matching the Milky Way bulge allow GSE a mass ratio of only a few per cent, i.e. a quiet merger history.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was a",
+      "object": "major merger",
+      "direction": "negative",
+      "quote": "suggesting an upper limit of a few per cent for the mass ratio of the recently proposed Gaia Sausage/Enceladus merger",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Auriga simulations",
+      "method": "cosmological simulations of barred galaxies",
+      "population": "Milky Way analogues",
+      "direction_canonical": "negative",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C05": {
+      "id": "C05",
+      "paper": "plevne2025estimating",
+      "statement": "A chemical-evolution fit gives GSE a gas mass of about 4.9×10^9 solar masses, at the high end of earlier estimates.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was a",
+      "object": "major merger",
+      "direction": "positive",
+      "quote": "placing it at the higher end of previously suggested mass ranges",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "low",
+      "dataset": "APOGEE + Gaia DR3",
+      "method": "HDBSCAN selection + OMEGA+ chemical evolution model",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "low"
+    },
+    "C06": {
+      "id": "C06",
+      "paper": "grand2020dual",
+      "statement": "In Auriga simulations, the GSE-like merger was gas-rich and fuelled a central starburst.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was",
+      "object": "gas-rich",
+      "direction": "positive",
+      "quote": "We find that the GES merger is likely to have been gas-rich",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Auriga simulations",
+      "method": "cosmological MHD simulations",
+      "population": "Milky Way analogues",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C07": {
+      "id": "C07",
+      "paper": "ciuca2023chasing",
+      "statement": "Ages of 68,360 APOGEE giants show a metallicity dip then enrichment consistent with a gas-rich GSE merger.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was",
+      "object": "gas-rich",
+      "direction": "positive",
+      "quote": "was likely a significant gas-rich merger and induced a starburst",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "APOGEE DR17",
+      "method": "Bayesian ML stellar ages (BINGO)",
+      "population": "Milky Way disc",
+      "sample_size": 68360,
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C08": {
+      "id": "C08",
+      "paper": "valenzuela2023galaxy",
+      "statement": "Younger GSE-associated globular clusters formed during the merger, a signature of a wet (gas-rich) merger.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "was",
+      "object": "gas-rich",
+      "direction": "positive",
+      "quote": "the younger ones formed as a result of the merger",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Milky Way globular clusters",
+      "method": "GC age distributions + empirical GC model",
+      "population": "Milky Way globular clusters",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C09": {
+      "id": "C09",
+      "paper": "grand2020dual",
+      "statement": "The merger-induced starburst rapidly forms a compact thick disc.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "built",
+      "object": "thick disc",
+      "direction": "positive",
+      "quote": "results in the rapid formation of a compact, rotationally supported thick disc",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Auriga simulations",
+      "method": "cosmological MHD simulations",
+      "population": "Milky Way analogues",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C10": {
+      "id": "C10",
+      "paper": "ciuca2023chasing",
+      "statement": "GSE's starburst built the metal-rich part of the thick disc early on.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "built",
+      "object": "thick disc",
+      "direction": "positive",
+      "quote": "building of the metal-rich part of the thick disc at an early epoch",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "APOGEE DR17",
+      "method": "Bayesian ML stellar ages (BINGO)",
+      "population": "Milky Way disc",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C11": {
+      "id": "C11",
+      "paper": "naidu2021reconstructing",
+      "statement": "GSE delivered about half of the Milky Way's stellar halo.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "built",
+      "object": "stellar halo",
+      "direction": "positive",
+      "quote": "GSE delivered ≈20% of the Milky Way’s present-day dark matter and ≈50% of its stellar halo",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "value": 50,
+      "unit": "% of halo",
+      "dataset": "H3 Survey",
+      "method": "N-body simulations fitted to survey data",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C12": {
+      "id": "C12",
+      "paper": "belokurov2018formation",
+      "statement": "The radially anisotropic inner halo was deposited by one major accretion event.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "built",
+      "object": "stellar halo",
+      "direction": "positive",
+      "quote": "the stellar debris in the inner halo was deposited in a major accretion event",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Gaia + SDSS",
+      "method": "halo kinematics + zoom-in simulations",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C13": {
+      "id": "C13",
+      "paper": "plevne2025estimating",
+      "statement": "GSE contributed a significant fraction of the metal-poor halo.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "built",
+      "object": "stellar halo",
+      "direction": "positive",
+      "quote": "contributed a significant fraction of the metal-poor stellar halo of the Milky Way",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "low",
+      "dataset": "APOGEE + Gaia DR3",
+      "method": "HDBSCAN selection + OMEGA+ chemical evolution model",
+      "population": "Milky Way halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "low"
+    },
+    "C14": {
+      "id": "C14",
+      "paper": "ernandes2024gaia",
+      "statement": "Neutron-capture abundances show GSE star formation started gradually and lasted over 2 Gyr.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "had",
+      "object": "extended star formation",
+      "direction": "positive",
+      "quote": "it extended for over 2 Gyr",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "SAGA database",
+      "method": "[Eu/Mg], [Ba/Mg] abundance trends vs dwarf galaxies",
+      "population": "GSE member stars",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C15": {
+      "id": "C15",
+      "paper": "plevne2025estimating",
+      "statement": "The best chemical-evolution model needs a short star-formation timescale with strong outflows.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "had",
+      "object": "extended star formation",
+      "direction": "negative",
+      "quote": "The model scenario suggests a short star formation timescale",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "low",
+      "dataset": "APOGEE + Gaia DR3",
+      "method": "HDBSCAN selection + OMEGA+ chemical evolution model",
+      "population": "GSE member stars",
+      "direction_canonical": "negative",
+      "flipped": false,
+      "confidence_used": "low"
+    },
+    "C16": {
+      "id": "C16",
+      "paper": "haywood2018disguise",
+      "statement": "Gaia DR2 halo stars split into accreted stars and heated old disc; no in-situ halo population is robustly identified.",
+      "subject": "in-situ stellar halo",
+      "relation": "is detected in",
+      "object": "milky way survey data",
+      "direction": "null",
+      "quote": "the in situ stellar halo of the Galaxy may in fact be fossil records of its last significant merger",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Gaia DR2",
+      "method": "colour–magnitude dual sequence + orbits",
+      "population": "solar-neighbourhood halo",
+      "direction_canonical": "null",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C17": {
+      "id": "C17",
+      "paper": "belokurov2022dawn",
+      "statement": "Aluminium abundances isolate a metal-poor in-situ component, 'Aurora', born before the disc spun up.",
+      "subject": "in-situ stellar halo",
+      "relation": "is detected in",
+      "object": "milky way survey data",
+      "direction": "positive",
+      "quote": "The low-metallicity ([Fe/H] ≲ −1.3) in-situ component we dub Aurora is kinematically hot",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "APOGEE DR17 + Gaia EDR3",
+      "method": "[Al/Fe]-selected in-situ sample",
+      "population": "solar-neighbourhood halo",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C18": {
+      "id": "C18",
+      "paper": "merrow2024did",
+      "statement": "In Auriga, a GSE-like merger triggers bar formation within 1 Gyr; removing it delays the bar by about 2 Gyr.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "triggered",
+      "object": "milky way bar",
+      "direction": "positive",
+      "quote": "Our study suggests that the GES may therefore be responsible for the formation of the Milky Way’s bar",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "Auriga simulations",
+      "method": "cosmological simulation re-run without the merger",
+      "population": "Milky Way analogues",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C19": {
+      "id": "C19",
+      "paper": "deng2024potential",
+      "statement": "A gas-rich GSE merger simulation reproduces the Galactic disc warp.",
+      "subject": "gaia-sausage-enceladus",
+      "relation": "caused",
+      "object": "galactic disc warp",
+      "direction": "positive",
+      "quote": "a single major merger could generate the Galactic warp amplitude and precession",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "GIZMO simulation",
+      "method": "hydrodynamic merger simulation",
+      "population": "Milky Way disc",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C20": {
+      "id": "C20",
+      "paper": "massari2026evidence",
+      "statement": "Globular-cluster ages reveal another merger of similar mass about 1.8 Gyr before GSE (Low-energy-Kraken-Heracles).",
+      "subject": "milky way",
+      "relation": "experienced",
+      "object": "pre-gse major merger",
+      "direction": "positive",
+      "quote": "at least one merger that we estimate took place about 1.8 billion years before Gaia-Sausage-Enceladus",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "dataset": "HST globular cluster photometry",
+      "method": "relative GC ages",
+      "population": "Milky Way globular clusters",
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    },
+    "C21": {
+      "id": "C21",
+      "paper": "matsuno2021process",
+      "statement": "GSE stars have higher [Eu/Mg] than in-situ stars.",
+      "subject": "gaia-sausage-enceladus stars",
+      "relation": "exceeds",
+      "object": "in-situ stars",
+      "direction": "positive",
+      "quote": "Gaia-Enceladus stars clearly show higher ratios of [Eu/Mg] than in situ stars",
+      "evidence": "abstract",
+      "source_text": "abstract",
+      "confidence": "medium",
+      "metric": "[Eu/Mg]",
+      "dataset": "GALAH DR3",
+      "method": "kinematic selection + Eu abundances",
+      "population": "halo stars",
+      "sample_size": 102,
+      "direction_canonical": "positive",
+      "flipped": false,
+      "confidence_used": "medium"
+    }
+  }
+}

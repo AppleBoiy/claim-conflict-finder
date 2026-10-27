@@ -1,0 +1,1429 @@
+@prefix rs: <https://w3id.org/research-suite/vocab#> .
+@prefix ex: <https://w3id.org/research-suite/data/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rs:Paper a <http://www.w3.org/2002/07/owl#Class> .
+rs:Claim a <http://www.w3.org/2002/07/owl#Class> .
+rs:Concept a <http://www.w3.org/2002/07/owl#Class> .
+
+ex:paper_suda2017stellar a rs:Paper ;
+  dct:title "Stellar Abundances for Galactic Archaeology Database IV - Compilation of Stars in Dwarf Galaxies" ;
+  dct:date "2017"^^xsd:gYear ;
+  rs:doi "10.1093/pasj/psx059" ;
+  rs:citationKey "suda2017stellar" .
+
+ex:paper_monti2026climb a rs:Paper ;
+  dct:title "CLiMB: A Domain-Informed Novelty Detection Clustering Framework for Galactic Archaeology and Scientific Discovery" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:citationKey "monti2026climb" .
+
+ex:paper_lin2025revealing a rs:Paper ;
+  dct:title "Revealing the Origins of Galactic Globular Clusters via Their Mg-Al Abundances" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:citationKey "lin2025revealing" .
+
+ex:paper_valenzuela2023galaxy a rs:Paper ;
+  dct:title "Galaxy archaeology for wet mergers: Globular cluster age distributions in the Milky Way and nearby galaxies" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202348010" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_mateu2022galstreams ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "valenzuela2023galaxy" .
+
+ex:paper_cnar2025tracing a rs:Paper ;
+  dct:title "Tracing the Galactic Origins of Selected Four G-type Stars in the Solar Neighbourhood" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:citationKey "cnar2025tracing" .
+
+ex:paper_cook2022tracing a rs:Paper ;
+  dct:title "Tracing Milky Way substructure with an RR Lyrae hierarchical clustering forest" ;
+  dct:date "2022"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stac1007" ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:citationKey "cook2022tracing" .
+
+ex:paper_carbajohijarrubia2025open a rs:Paper ;
+  dct:title "Open clusters in the outer disc studied with MEGARA@GTC Auner 1 and Berkeley 102" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202453444" ;
+  rs:citationKey "carbajohijarrubia2025open" .
+
+ex:paper_dufresne2026absolute a rs:Paper ;
+  dct:title "The Absolute Age of the Open Cluster NGC 6791 and Its Implications for Galactic Archaeology and Asteroseismic Calibration" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:citationKey "dufresne2026absolute" .
+
+ex:paper_vilar2025chemical a rs:Paper ;
+  dct:title "Chemical Abundances of M and G Dwarfs in the Hyades and Coma Berenices Open Clusters from APOGEE Spectra" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:citationKey "vilar2025chemical" .
+
+ex:paper_straniero2026oxygen a rs:Paper ;
+  dct:title "Oxygen isotopic ratio in open cluster RGB stars: A new method for accurate mass and age estimations" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:citationKey "straniero2026oxygen" .
+
+ex:paper_minelli2021set a rs:Paper ;
+  dct:title "A new set of chisels for Galactic archaeology: Sc, V and Zn as taggers of accreted globular clusters" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.3847/2041-8213/ac2156" ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:citationKey "minelli2021set" .
+
+ex:paper_shipp2018stellar a rs:Paper ;
+  dct:title "Stellar Streams Discovered in the Dark Energy Survey" ;
+  dct:date "2018"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/aacdab" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:citationKey "shipp2018stellar" .
+
+ex:paper_ji2020southern a rs:Paper ;
+  dct:title "The Southern Stellar Stream Spectroscopic Survey (S5): Chemical Abundances of Seven Stellar Streams" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.3847/1538-3881/abacb6" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_bonaca2019multiple ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_li2019southern ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "ji2020southern" .
+
+ex:paper_bonaca2024stellar a rs:Paper ;
+  dct:title "Stellar streams in the Gaia era" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1016/j.newar.2024.101713" ;
+  rs:cites ex:paper_anon2023stellar ;
+  rs:cites ex:paper_banik2018probing ;
+  rs:cites ex:paper_banik2019constraints ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_bonaca2018information ;
+  rs:cites ex:paper_bonaca2019multiple ;
+  rs:cites ex:paper_brooks2024action ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_chen2015parsec ;
+  rs:cites ex:paper_deason2024galactic ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_hu2000fuzzy ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_iye2003instrument ;
+  rs:cites ex:paper_ji2020southern ;
+  rs:cites ex:paper_kallivayalil2013third ;
+  rs:cites ex:paper_li2019southern ;
+  rs:cites ex:paper_martin2022pristine ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:cites ex:paper_mateu2022galstreams ;
+  rs:cites ex:paper_mestre2019chaos ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_padmanabhan2008improved ;
+  rs:cites ex:paper_perryman1997hipparcos ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:cites ex:paper_thomas2017stellar ;
+  rs:citationKey "bonaca2024stellar" .
+
+ex:paper_erkal2016number a rs:Paper ;
+  dct:title "The number and size of subhalo-induced gaps in stellar streams" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stw1957" ;
+  rs:cites ex:paper_grillmair2016stellar ;
+  rs:cites ex:paper_padmanabhan2008improved ;
+  rs:citationKey "erkal2016number" .
+
+ex:paper_bonaca2018information a rs:Paper ;
+  dct:title "The Information Content in Cold Stellar Streams" ;
+  dct:date "2018"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/aae4da" ;
+  rs:cites ex:paper_grillmair2016stellar ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "bonaca2018information" .
+
+ex:paper_ibata2019streams a rs:Paper ;
+  dct:title "The Streams of the Gaping Abyss: A Population of Entangled Stellar Streams Surrounding the Inner Galaxy" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/ab0080" ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "ibata2019streams" .
+
+ex:paper_thomas2017stellar a rs:Paper ;
+  dct:title "Stellar streams as gravitational experiments" ;
+  dct:date "2017"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/201731609" ;
+  rs:citationKey "thomas2017stellar" .
+
+ex:paper_perottoni2019cold a rs:Paper ;
+  dct:title "A cold stellar stream in Pegasus" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stz869" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_bonaca2018information ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "perottoni2019cold" .
+
+ex:paper_banik2018probing a rs:Paper ;
+  dct:title "Probing the nature of dark matter particles with stellar streams" ;
+  dct:date "2018"^^xsd:gYear ;
+  rs:doi "10.1088/1475-7516/2018/07/061" ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:citationKey "banik2018probing" .
+
+ex:paper_mestre2019chaos a rs:Paper ;
+  dct:title "Effects of chaos on the detectability of stellar streams" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stz3505" ;
+  rs:cites ex:paper_banik2018probing ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "mestre2019chaos" .
+
+ex:paper_bonaca2019multiple a rs:Paper ;
+  dct:title "Multiple Components of the Jhelum Stellar Stream" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:doi "10.3847/2041-8213/ab36ba" ;
+  rs:cites ex:paper_bonaca2018information ;
+  rs:cites ex:paper_grillmair2016stellar ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "bonaca2019multiple" .
+
+ex:paper_newberg2021introduction a rs:Paper ;
+  dct:title "Introduction to Tidal Streams" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1007/978-3-319-19336-6_1" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:citationKey "newberg2021introduction" .
+
+ex:paper_grillmair2016stellar a rs:Paper ;
+  dct:title "Stellar Streams and Clouds in the Galactic Halo" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.1007/978-3-319-19336-6_4" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "grillmair2016stellar" .
+
+ex:paper_chang2026reconciling a rs:Paper ;
+  dct:title "Reconciling Galactic rotation curve constraints with stellar stream modeling" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:citationKey "chang2026reconciling" .
+
+ex:paper_menker2024advancing a rs:Paper ;
+  dct:title "Advancing Stellar Streams as a Dark Matter Probe -- I: Evolution of the CDM subhalo population" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stag538" ;
+  rs:citationKey "menker2024advancing" .
+
+ex:paper_carlin2016stellar a rs:Paper ;
+  dct:title "Stellar Tidal Streams in External Galaxies" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.1007/978-3-319-19336-6_9" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:citationKey "carlin2016stellar" .
+
+ex:paper_banik2019constraints a rs:Paper ;
+  dct:title "Novel constraints on the particle nature of dark matter from stellar streams" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:doi "10.1088/1475-7516/2021/10/043" ;
+  rs:cites ex:paper_banik2018probing ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_davis1985evolution ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "banik2019constraints" .
+
+ex:paper_mateu2022galstreams a rs:Paper ;
+  dct:title "galstreams: A Library of Milky Way Stellar Stream Footprints and Tracks" ;
+  dct:date "2022"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stad321" ;
+  rs:cites ex:paper_banik2019constraints ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_bonaca2019multiple ;
+  rs:cites ex:paper_grillmair2016stellar ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_perottoni2019cold ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "mateu2022galstreams" .
+
+ex:paper_martin2022pristine a rs:Paper ;
+  dct:title "The Pristine survey -- XVI. The metallicity of 26 stellar streams around the Milky Way detected with the STREAMFINDER in Gaia EDR3" ;
+  dct:date "2022"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stac2426" ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_ji2020southern ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "martin2022pristine" .
+
+ex:paper_ferguson2016substructure a rs:Paper ;
+  dct:title "Substructure and Tidal Streams in the Andromeda Galaxy and its Satellites" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.1007/978-3-319-19336-6_8" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:citationKey "ferguson2016substructure" .
+
+ex:paper_necib2019evidence a rs:Paper ;
+  dct:title "Evidence for a Vast Prograde Stellar Stream in the Solar Vicinity" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:citationKey "necib2019evidence" .
+
+ex:paper_feuillet2020skymapper a rs:Paper ;
+  dct:title "The SkyMapper-Gaia RVS view of the Gaia–Enceladus–Sausage – an investigation of the metallicity and mass of the Milky Way’s last major merger" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/staa1888" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:citationKey "feuillet2020skymapper" .
+
+ex:paper_bos2019characterization a rs:Paper ;
+  dct:title "Characterization of a simulated minor merger resembling Gaia-Enceladus" ;
+  dct:date "2019"^^xsd:gYear ;
+  rs:citationKey "bos2019characterization" .
+
+ex:paper_grand2020dual a rs:Paper ;
+  dct:title "The dual origin of the Galactic thick disc and halo from the gas-rich Gaia–Enceladus Sausage merger" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/staa2057" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_davis1985evolution ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_fragkoudi2020chemodynamics ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:cites ex:paper_robertson2006mergerdriven ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "grand2020dual" .
+
+ex:paper_han2021lamosts a rs:Paper ;
+  dct:title "LAMOST’s view on the Gaia-Sausage-Enceladus merger event" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1007/s11433-020-1648-1" ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "han2021lamosts" .
+
+ex:paper_merrow2024did a rs:Paper ;
+  dct:title "Did the Gaia Enceladus/Sausage merger form the Milky Way’s bar?" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stae1250" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_fragkoudi2020chemodynamics ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "merrow2024did" .
+
+ex:paper_ciuca2023chasing a rs:Paper ;
+  dct:title "Chasing the impact of the Gaia-Sausage-Enceladus merger on the formation of the Milky Way thick disc" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1093/mnrasl/slad033" ;
+  rs:cites ex:paper_abadi2016tensorflow ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "ciuca2023chasing" .
+
+ex:paper_chen2026bar a rs:Paper ;
+  dct:title "Bar Formation during a Gaia-Sausage-Enceladus-like Merger Event" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/ae47e6" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_deng2024potential ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_merrow2024did ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:citationKey "chen2026bar" .
+
+ex:paper_matsuno2020bright a rs:Paper ;
+  dct:title "Bright Stars from the Ancient Merger Gaia-Enceladus Visible with Binoculars" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.3847/2515-5172/abd4d1" ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:citationKey "matsuno2020bright" .
+
+ex:paper_deng2024potential a rs:Paper ;
+  dct:title "A Potential Dynamical Origin of the Galactic Disk Warp: The Gaia–Sausage–Enceladus Major Merger" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/ad7799" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "deng2024potential" .
+
+ex:paper_massari2026evidence a rs:Paper ;
+  dct:title "Evidence of a massive accretion event 1.8 billion years before the Gaia-Sausage-Enceladus merger" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:doi "10.1038/s41550-026-02931-5" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_massari2023cluster ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:citationKey "massari2026evidence" .
+
+ex:paper_matsuno2021process a rs:Paper ;
+  dct:title "$R$-process enhancements of Gaia-Enceladus in GALAH DR3" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202040227" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:citationKey "matsuno2021process" .
+
+ex:paper_plevne2025estimating a rs:Paper ;
+  dct:title "Estimating Initial Mass of Gaia-Enceladus Dwarf Galaxy with Chemical Evolution Model" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:citationKey "plevne2025estimating" .
+
+ex:paper_kochhansen2021ngc a rs:Paper ;
+  dct:title "NGC 1261: an $r$-process enhanced globular cluster from the Gaia-Enceladus event" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202141130" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_gudin2021process ;
+  rs:cites ex:paper_hanke2020purveyors ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ji2020southern ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "kochhansen2021ngc" .
+
+ex:paper_skuladottir2025evidence a rs:Paper ;
+  dct:title "Evidence of Gaia Enceladus experiencing at least two passages around the Milky Way" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/2041-8213/addc66" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_ernandes2024gaia ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "skuladottir2025evidence" .
+
+ex:paper_ernandes2024gaia a rs:Paper ;
+  dct:title "Gaia-Sausage-Enceladus star formation history as revealed by detailed elemental abundances" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202450827" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:citationKey "ernandes2024gaia" .
+
+ex:paper_zepeda2025chemodynamically a rs:Paper ;
+  dct:title "Chemodynamically tagged groups of CEMP stars. I." ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.26093/cds/vizier/ba-xk-q" ;
+  rs:citationKey "zepeda2025chemodynamically" .
+
+ex:paper_barth2025trials a rs:Paper ;
+  dct:title "Trials and Tribulations of Chemodynamical Tagging: Investigating the Recovery of Open Clusters in the Gaia DR3-GALAH DR4 Catalog" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.48550/arxiv.2504.11586" ;
+  rs:citationKey "barth2025trials" .
+
+ex:paper_shank2023process a rs:Paper ;
+  dct:title "The R-Process Alliance: Chemodynamically Tagged Groups. II. An Extended Sample of Halo r-process-enhanced Stars" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/aca322" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_gudin2021process ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "shank2023process" .
+
+ex:paper_gudin2021process a rs:Paper ;
+  dct:title "The R-Process Alliance: Chemodynamically Tagged Groups of Halo r-process-enhanced Stars Reveal a Shared Chemical-evolution History" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/abd7ed" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "gudin2021process" .
+
+ex:paper_zepeda2023chemodynamically a rs:Paper ;
+  dct:title "Chemodynamically Tagged Groups of CEMP Stars in the Halo of the Milky Way. I. Untangling the Origins of CEMP-s and CEMP-no Stars" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/acbbcc" ;
+  rs:cites ex:paper_gudin2021process ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_shank2023process ;
+  rs:citationKey "zepeda2023chemodynamically" .
+
+ex:paper_barth2025trialsa a rs:Paper ;
+  dct:title "Trials and Tribulations of Chemodynamical Tagging: Investigating the Recovery of Open Clusters in the Gaia Data Release 3 and GALAH Data Release 4 Catalogs" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/adccbc" ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "barth2025trialsa" .
+
+ex:paper_agnos2024process a rs:Paper ;
+  dct:title "THE R-PROCESS ENHANCEMENT OF STARS FROM CHEMODYNAMICALLY TAGGED GROUPS IN THE MILKY WAY HALO" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.46569/qz20t1384" ;
+  rs:citationKey "agnos2024process" .
+
+ex:paper_agnos2026process a rs:Paper ;
+  dct:title "The $R$-Process Alliance: The $R$-Process Enhancement of Stars from Chemodynamically Tagged Groups in the Milky Way Halo" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/ae6b72" ;
+  rs:cites ex:paper_gudin2021process ;
+  rs:cites ex:paper_shank2023process ;
+  rs:citationKey "agnos2026process" .
+
+ex:paper_garcia2026constraining a rs:Paper ;
+  dct:title "Constraining the Origins of CEMP-r stars with Chemodynamically Tagged Groups and Weak r-process Sensitivity Studies" ;
+  dct:date "2026"^^xsd:gYear ;
+  rs:doi "10.7274/32962490" ;
+  rs:citationKey "garcia2026constraining" .
+
+ex:paper_zhang2024four a rs:Paper ;
+  dct:title "Four-hundred Very Metal-poor Stars Studied with LAMOST and Subaru. III. Dynamically Tagged Groups and Chemodynamical Properties" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/ad31a6" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_buder2021galah ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_kochhansen2021ngc ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_zepeda2023chemodynamically ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "zhang2024four" .
+
+ex:paper_hanke2020purveyors a rs:Paper ;
+  dct:title "Purveyors of fine halos. II. Chemodynamical association of halo stars with Milky Way globular clusters" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202037853" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "hanke2020purveyors" .
+
+ex:paper_buder2021galah a rs:Paper ;
+  dct:title "The GALAH Survey: Chemical tagging and chrono-chemodynamics of accreted halo stars with GALAH+ DR3 and $Gaia$ eDR3" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stab3504" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_kochhansen2021ngc ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:cites ex:paper_matteucci2021modelling ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "buder2021galah" .
+
+ex:paper_davis1985evolution a rs:Paper ;
+  dct:title "The evolution of large-scale structure in a universe dominated by cold dark matter" ;
+  dct:date "1985"^^xsd:gYear ;
+  rs:doi "10.1086/163168" ;
+  rs:citationKey "davis1985evolution" .
+
+ex:paper_eggen1962evidence a rs:Paper ;
+  dct:title "Evidence from the motions of old stars that the Galaxy collapsed." ;
+  dct:date "1962"^^xsd:gYear ;
+  rs:doi "10.1086/147433" ;
+  rs:citationKey "eggen1962evidence" .
+
+ex:paper_chiappini1997chemical a rs:Paper ;
+  dct:title "The Chemical Evolution of the Galaxy: The Two‐Infall Model" ;
+  dct:date "1997"^^xsd:gYear ;
+  rs:doi "10.1086/303726" ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:citationKey "chiappini1997chemical" .
+
+ex:paper_belokurov2006field a rs:Paper ;
+  dct:title "The Field of Streams: Sagittarius and Its Siblings" ;
+  dct:date "2006"^^xsd:gYear ;
+  rs:doi "10.1086/504797" ;
+  rs:citationKey "belokurov2006field" .
+
+ex:paper_quinn1993heating a rs:Paper ;
+  dct:title "Heating of galactic disks by mergers" ;
+  dct:date "1993"^^xsd:gYear ;
+  rs:doi "10.1086/172184" ;
+  rs:citationKey "quinn1993heating" .
+
+ex:paper_robertson2006mergerdriven a rs:Paper ;
+  dct:title "A Merger‐driven Scenario for Cosmological Disk Galaxy Formation" ;
+  dct:date "2006"^^xsd:gYear ;
+  rs:doi "10.1086/504412" ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:citationKey "robertson2006mergerdriven" .
+
+ex:paper_brook2004emergence a rs:Paper ;
+  dct:title "The Emergence of the Thick Disk in a Cold Dark Matter Universe" ;
+  dct:date "2004"^^xsd:gYear ;
+  rs:doi "10.1086/422709" ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:citationKey "brook2004emergence" .
+
+ex:paper_belokurov2022dawn a rs:Paper ;
+  dct:title "From dawn till disc: Milky Way’s turbulent youth revealed by the APOGEE+ Gaia data" ;
+  dct:date "2022"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stac1267" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_matteucci2021modelling ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "belokurov2022dawn" .
+
+ex:paper_miglio2020age a rs:Paper ;
+  dct:title "Age dissection of the Milky Way discs: Red giants in theKeplerfield" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202038307" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:citationKey "miglio2020age" .
+
+ex:paper_matteucci2021modelling a rs:Paper ;
+  dct:title "Modelling the chemical evolution of the Milky Way" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1007/s00159-021-00133-8" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:citationKey "matteucci2021modelling" .
+
+ex:paper_naidu2021reconstructing a rs:Paper ;
+  dct:title "Reconstructing the Last Major Merger of the Milky Way with the H3 Survey" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/ac2d2d" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_gudin2021process ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "naidu2021reconstructing" .
+
+ex:paper_fragkoudi2020chemodynamics a rs:Paper ;
+  dct:title "Chemodynamics of barred galaxies in cosmological simulations: On the Milky Way’s quiescent merger history and in-situ bulge" ;
+  dct:date "2020"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/staa1104" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "fragkoudi2020chemodynamics" .
+
+ex:paper_montalban2021chronologically a rs:Paper ;
+  dct:title "Chronologically dating the early assembly of the Milky Way" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1038/s41550-021-01347-7" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:citationKey "montalban2021chronologically" .
+
+ex:paper_queiroz2021milky a rs:Paper ;
+  dct:title "The Milky Way bar and bulge revealed by APOGEE and Gaia EDR3" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202039030" ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_fragkoudi2020chemodynamics ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:citationKey "queiroz2021milky" .
+
+ex:paper_prusti2016gaia a rs:Paper ;
+  dct:title "The Gaia mission" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/201629272" ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:citationKey "prusti2016gaia" .
+
+ex:paper_hu2000fuzzy a rs:Paper ;
+  dct:title "Fuzzy Cold Dark Matter: The Wave Properties of Ultralight Particles" ;
+  dct:date "2000"^^xsd:gYear ;
+  rs:doi "10.1103/physrevlett.85.1158" ;
+  rs:citationKey "hu2000fuzzy" .
+
+ex:paper_ibata1994dwarf a rs:Paper ;
+  dct:title "A dwarf satellite galaxy in Sagittarius" ;
+  dct:date "1994"^^xsd:gYear ;
+  rs:doi "10.1038/370194a0" ;
+  rs:citationKey "ibata1994dwarf" .
+
+ex:paper_iye2003instrument a rs:Paper ;
+  dct:title "Instrument Design and Performance for Optical/Infrared Ground-based Telescopes" ;
+  dct:date "2003"^^xsd:gYear ;
+  rs:citationKey "iye2003instrument" .
+
+ex:paper_chen2015parsec a rs:Paper ;
+  dct:title "parsec evolutionary tracks of massive stars up to 350 M ⊙ at metallicities 0.0001 ≤ Z ≤ 0.04" ;
+  dct:date "2015"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stv1281" ;
+  rs:citationKey "chen2015parsec" .
+
+ex:paper_padmanabhan2008improved a rs:Paper ;
+  dct:title "An Improved Photometric Calibration of the Sloan Digital Sky Survey Imaging Data" ;
+  dct:date "2008"^^xsd:gYear ;
+  rs:doi "10.1086/524677" ;
+  rs:citationKey "padmanabhan2008improved" .
+
+ex:paper_kallivayalil2013third a rs:Paper ;
+  dct:title "THIRD-EPOCH MAGELLANIC CLOUD PROPER MOTIONS. I.HUBBLE SPACE TELESCOPE/WFC3 DATA AND ORBIT IMPLICATIONS" ;
+  dct:date "2013"^^xsd:gYear ;
+  rs:doi "10.1088/0004-637x/764/2/161" ;
+  rs:citationKey "kallivayalil2013third" .
+
+ex:paper_perryman1997hipparcos a rs:Paper ;
+  dct:title "The Hipparcos Catalogue" ;
+  dct:date "1997"^^xsd:gYear ;
+  rs:citationKey "perryman1997hipparcos" .
+
+ex:paper_hunt2025milky a rs:Paper ;
+  dct:title "Milky Way dynamics in light of Gaia" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.1016/j.newar.2024.101721" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_deason2024galactic ;
+  rs:cites ex:paper_deng2024potential ;
+  rs:cites ex:paper_fragkoudi2020chemodynamics ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_li2019southern ;
+  rs:cites ex:paper_mateu2022galstreams ;
+  rs:cites ex:paper_merrow2024did ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_queiroz2021milky ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "hunt2025milky" .
+
+ex:paper_nadler2025cozmic a rs:Paper ;
+  dct:title "COZMIC. I. Cosmological Zoom-in Simulations with Initial Conditions Beyond Cold Dark Matter" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/adceef" ;
+  rs:cites ex:paper_banik2019constraints ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_hu2000fuzzy ;
+  rs:citationKey "nadler2025cozmic" .
+
+ex:paper_chen2025improved a rs:Paper ;
+  dct:title "Improved Particle Spray Algorithm for Modeling Globular Cluster Streams" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4365/ad9904" ;
+  rs:cites ex:paper_banik2018probing ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_mateu2022galstreams ;
+  rs:citationKey "chen2025improved" .
+
+ex:paper_nibauer2025galactic a rs:Paper ;
+  dct:title "Galactic Accelerations from the GD-1 Stream Suggest a Tilted Dark Matter Halo" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/2041-8213/add0a9" ;
+  rs:cites ex:paper_bonaca2018information ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_hunt2025milky ;
+  rs:cites ex:paper_li2019southern ;
+  rs:citationKey "nibauer2025galactic" .
+
+ex:paper_nibauer2025streamsculptor a rs:Paper ;
+  dct:title "StreamSculptor: Hamiltonian Perturbation Theory for Stellar Streams in Flexible Potentials with Differentiable Simulations" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/adb8e8" ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_brooks2024action ;
+  rs:cites ex:paper_chen2025improved ;
+  rs:cites ex:paper_erkal2016number ;
+  rs:cites ex:paper_hu2000fuzzy ;
+  rs:citationKey "nibauer2025streamsculptor" .
+
+ex:paper_brooks2024action a rs:Paper ;
+  dct:title "Action and energy clustering of stellar streams in deforming Milky Way dark matter haloes" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stae1565" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_bonaca2018information ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_deason2024galactic ;
+  rs:cites ex:paper_li2019southern ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "brooks2024action" .
+
+ex:paper_nadler2025sidm a rs:Paper ;
+  dct:title "SIDM Concerto: Compilation and Data Release of Self-interacting Dark Matter Zoom-in Simulations" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/adf553" ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_nadler2025cozmic ;
+  rs:citationKey "nadler2025sidm" .
+
+ex:paper_shipp2025auriga a rs:Paper ;
+  dct:title "Auriga Streams II: orbital properties of tidally disrupting satellites of Milky Way-mass galaxies" ;
+  dct:date "2025"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/staf1283" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_bonaca2024stellar ;
+  rs:cites ex:paper_davis1985evolution ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_mateu2022galstreams ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "shipp2025auriga" .
+
+ex:paper_abadi2016tensorflow a rs:Paper ;
+  dct:title "TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.48550/arxiv.1603.04467" ;
+  rs:citationKey "abadi2016tensorflow" .
+
+ex:paper_brown2016gaia a rs:Paper ;
+  dct:title "Gaia Data Release 1" ;
+  dct:date "2016"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/201629512" ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "brown2016gaia" .
+
+ex:paper_zhao2012lamost a rs:Paper ;
+  dct:title "LAMOST spectral survey — An overview" ;
+  dct:date "2012"^^xsd:gYear ;
+  rs:doi "10.1088/1674-4527/12/7/002" ;
+  rs:citationKey "zhao2012lamost" .
+
+ex:paper_helmi2018merger a rs:Paper ;
+  dct:title "The merger that led to the formation of the Milky Way’s inner stellar halo and thick disk" ;
+  dct:date "2018"^^xsd:gYear ;
+  rs:doi "10.1038/s41586-018-0625-x" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "helmi2018merger" .
+
+ex:paper_belokurov2018formation a rs:Paper ;
+  dct:title "Co-formation of the disc and the stellar halo★" ;
+  dct:date "2018"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/sty982" ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:citationKey "belokurov2018formation" .
+
+ex:paper_grand2017auriga a rs:Paper ;
+  dct:title "The Auriga Project: the properties and formation mechanisms of disc galaxies across cosmic time" ;
+  dct:date "2017"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stx071" ;
+  rs:cites ex:paper_davis1985evolution ;
+  rs:cites ex:paper_genel2014introducing ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "grand2017auriga" .
+
+ex:paper_haywood2018disguise a rs:Paper ;
+  dct:title "In Disguise or Out of Reach: First Clues about In Situ and Accreted Stars in the Stellar Halo of the Milky Way from Gaia DR2" ;
+  dct:date "2018"^^xsd:gYear ;
+  rs:doi "10.3847/1538-4357/aad235" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "haywood2018disguise" .
+
+ex:paper_deason2024galactic a rs:Paper ;
+  dct:title "Galactic Archaeology with Gaia" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1016/j.newar.2024.101706" ;
+  rs:cites ex:paper_anon2023stellar ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_buder2021galah ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_eggen1962evidence ;
+  rs:cites ex:paper_feuillet2020skymapper ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_kallivayalil2013third ;
+  rs:cites ex:paper_martin2022pristine ;
+  rs:cites ex:paper_matsuno2021process ;
+  rs:cites ex:paper_matteucci2021modelling ;
+  rs:cites ex:paper_minelli2021set ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_zepeda2023chemodynamically ;
+  rs:citationKey "deason2024galactic" .
+
+ex:paper_anders2023spectroscopic a rs:Paper ;
+  dct:title "Spectroscopic age estimates for APOGEE red-giant stars: Precise spatial and kinematic trends with age in the Galactic disc" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202346666" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:cites ex:paper_queiroz2021milky ;
+  rs:cites ex:paper_ratcliffe2023unveiling ;
+  rs:citationKey "anders2023spectroscopic" .
+
+ex:paper_ratcliffe2023unveiling a rs:Paper ;
+  dct:title "Unveiling the time evolution of chemical abundances across the Milky Way disc with APOGEE" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stad1573" ;
+  rs:cites ex:paper_anon2023stellar ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_buck2023early ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_matteucci2021modelling ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:citationKey "ratcliffe2023unveiling" .
+
+ex:paper_prantzos2023origin a rs:Paper ;
+  dct:title "On the origin of the Galactic thin and thick discs, their abundance gradients and the diagnostic potential of their abundance ratios" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stad1551" ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_miglio2020age ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:citationKey "prantzos2023origin" .
+
+ex:paper_buck2023early a rs:Paper ;
+  dct:title "The impact of early massive mergers on the chemical evolution of Milky Way-like galaxies: insights from NIHAO-UHD simulations" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stad1503" ;
+  rs:cites ex:paper_anon2023stellar ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_belokurov2022dawn ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_buder2021galah ;
+  rs:cites ex:paper_chiappini1997chemical ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_grand2017auriga ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_naidu2021reconstructing ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:cites ex:paper_zhao2012lamost ;
+  rs:citationKey "buck2023early" .
+
+ex:paper_massari2023cluster a rs:Paper ;
+  dct:title "Cluster Ages to Reconstruct the Milky Way Assembly (CARMA)" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202347289" ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_minelli2021set ;
+  rs:cites ex:paper_montalban2021chronologically ;
+  rs:citationKey "massari2023cluster" .
+
+ex:paper_anon2023stellar a rs:Paper ;
+  dct:title "The stellar halo in Local Group Hestia simulations" ;
+  dct:date "2023"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202244232" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_brook2004emergence ;
+  rs:cites ex:paper_brown2016gaia ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_grand2020dual ;
+  rs:cites ex:paper_haywood2018disguise ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_quinn1993heating ;
+  rs:cites ex:paper_vogelsberger2013cosmological ;
+  rs:citationKey "anon2023stellar" .
+
+ex:paper_ratcliffe2024chemical a rs:Paper ;
+  dct:title "Chemical clocks and their time zones: understanding the [ s /Mg]–age relation with birth radii" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stae226" ;
+  rs:cites ex:paper_anders2023spectroscopic ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_buck2023early ;
+  rs:cites ex:paper_ciuca2023chasing ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_matteucci2021modelling ;
+  rs:cites ex:paper_ratcliffe2023unveiling ;
+  rs:citationKey "ratcliffe2024chemical" .
+
+ex:paper_smee2013multi a rs:Paper ;
+  dct:title "THE MULTI-OBJECT, FIBER-FED SPECTROGRAPHS FOR THE SLOAN DIGITAL SKY SURVEY AND THE BARYON OSCILLATION SPECTROSCOPIC SURVEY" ;
+  dct:date "2013"^^xsd:gYear ;
+  rs:doi "10.1088/0004-6256/146/2/32" ;
+  rs:cites ex:paper_padmanabhan2008improved ;
+  rs:citationKey "smee2013multi" .
+
+ex:paper_abergel2014planck2013 a rs:Paper ;
+  dct:title "Planck2013 results. XI. All-sky model of thermal dust emission" ;
+  dct:date "2014"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/201323195" ;
+  rs:citationKey "abergel2014planck2013" .
+
+ex:paper_schweizer1992correlations a rs:Paper ;
+  dct:title "Correlations between UBV colors and fine structure in E and S0 galaxies - A first attempt at dating ancient merger events" ;
+  dct:date "1992"^^xsd:gYear ;
+  rs:doi "10.1086/116296" ;
+  rs:citationKey "schweizer1992correlations" .
+
+ex:paper_mellier2024euclid a rs:Paper ;
+  dct:title "Euclid" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202450810" ;
+  rs:cites ex:paper_abergel2014planck2013 ;
+  rs:cites ex:paper_belokurov2018formation ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_ibata2019streams ;
+  rs:cites ex:paper_martin2022preparing ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:cites ex:paper_prusti2016gaia ;
+  rs:citationKey "mellier2024euclid" .
+
+ex:paper_martin2022preparing a rs:Paper ;
+  dct:title "Preparing for low surface brightness science with the Vera C. Rubin Observatory: Characterization of tidal features from mock images" ;
+  dct:date "2022"^^xsd:gYear ;
+  rs:doi "10.1093/mnras/stac1003" ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:cites ex:paper_shipp2018stellar ;
+  rs:citationKey "martin2022preparing" .
+
+ex:paper_sola2022characterization a rs:Paper ;
+  dct:title "Characterization of low surface brightness structures in annotated deep images" ;
+  dct:date "2022"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202142675" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_ibata1994dwarf ;
+  rs:cites ex:paper_martin2022preparing ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:citationKey "sola2022characterization" .
+
+ex:paper_martinezdelgado2021tracing a rs:Paper ;
+  dct:title "Tracing satellite planes in the Sculptor group" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202141242" ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:citationKey "martinezdelgado2021tracing" .
+
+ex:paper_roman2021discovery a rs:Paper ;
+  dct:title "Discovery and analysis of low-surface-brightness galaxies in the environment of NGC 1052" ;
+  dct:date "2021"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202142161" ;
+  rs:cites ex:paper_martinezdelgado2021tracing ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:citationKey "roman2021discovery" .
+
+ex:paper_kluge2024euclid a rs:Paper ;
+  dct:title "Euclid: Early Release Observations – The intracluster light and intracluster globular clusters of the Perseus cluster" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202450772" ;
+  rs:cites ex:paper_abergel2014planck2013 ;
+  rs:cites ex:paper_hunt2024euclid ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:cites ex:paper_mellier2024euclid ;
+  rs:citationKey "kluge2024euclid" .
+
+ex:paper_hunt2024euclid a rs:Paper ;
+  dct:title "Euclid : Early Release Observations – Deep anatomy of nearby galaxies" ;
+  dct:date "2024"^^xsd:gYear ;
+  rs:doi "10.1051/0004-6361/202450781" ;
+  rs:cites ex:paper_belokurov2006field ;
+  rs:cites ex:paper_helmi2018merger ;
+  rs:cites ex:paper_juric2008milky ;
+  rs:cites ex:paper_martin2022preparing ;
+  rs:cites ex:paper_martin2022pristine ;
+  rs:cites ex:paper_martinezdelgado2022hidden ;
+  rs:cites ex:paper_mellier2024euclid ;
+  rs:cites ex:paper_roman2021discovery ;
+  rs:cites ex:paper_sola2022characterization ;
+  rs:citationKey "hunt2024euclid" .
+
+ex:claim_C01 a rs:Claim ;
+  rs:statedIn ex:paper_naidu2021reconstructing ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was a" ;
+  rs:object ex:concept_major_merger ;
+  rs:direction rs:positive ;
+  rs:dataset "H3 Survey" ;
+  rs:population "Milky Way halo" ;
+  rs:method "N-body simulations fitted to survey data" ;
+  rs:statement "Tailored N-body simulations fitted to H3 data imply GSE delivered about 20% of the Milky Way's dark matter." .
+
+ex:claim_C02 a rs:Claim ;
+  rs:statedIn ex:paper_belokurov2018formation ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was a" ;
+  rs:object ex:concept_major_merger ;
+  rs:direction rs:positive ;
+  rs:dataset "Gaia + SDSS" ;
+  rs:population "Milky Way halo" ;
+  rs:method "halo kinematics + zoom-in simulations" ;
+  rs:statement "The inner-halo debris came from a single massive satellite (virial mass above 10^10 solar masses) 8–11 Gyr ago." .
+
+ex:claim_C03 a rs:Claim ;
+  rs:statedIn ex:paper_feuillet2020skymapper ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was a" ;
+  rs:object ex:concept_major_merger ;
+  rs:direction rs:positive ;
+  rs:dataset "SkyMapper + Gaia RVS" ;
+  rs:population "Milky Way halo" ;
+  rs:method "metallicity distribution + mass–metallicity relation" ;
+  rs:statement "A clean GSE sample implies a progenitor stellar mass of 10^8.85–10^9.85 solar masses, consistent with earlier estimates." .
+
+ex:claim_C04 a rs:Claim ;
+  rs:statedIn ex:paper_fragkoudi2020chemodynamics ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was a" ;
+  rs:object ex:concept_major_merger ;
+  rs:direction rs:negative ;
+  rs:dataset "Auriga simulations" ;
+  rs:population "Milky Way analogues" ;
+  rs:method "cosmological simulations of barred galaxies" ;
+  rs:statement "Auriga galaxies matching the Milky Way bulge allow GSE a mass ratio of only a few per cent, i.e. a quiet merger history." .
+
+ex:claim_C05 a rs:Claim ;
+  rs:statedIn ex:paper_plevne2025estimating ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was a" ;
+  rs:object ex:concept_major_merger ;
+  rs:direction rs:positive ;
+  rs:dataset "APOGEE + Gaia DR3" ;
+  rs:population "Milky Way halo" ;
+  rs:method "HDBSCAN selection + OMEGA+ chemical evolution model" ;
+  rs:statement "A chemical-evolution fit gives GSE a gas mass of about 4.9×10^9 solar masses, at the high end of earlier estimates." .
+
+ex:claim_C06 a rs:Claim ;
+  rs:statedIn ex:paper_grand2020dual ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was" ;
+  rs:object ex:concept_gas_rich ;
+  rs:direction rs:positive ;
+  rs:dataset "Auriga simulations" ;
+  rs:population "Milky Way analogues" ;
+  rs:method "cosmological MHD simulations" ;
+  rs:statement "In Auriga simulations, the GSE-like merger was gas-rich and fuelled a central starburst." .
+
+ex:claim_C07 a rs:Claim ;
+  rs:statedIn ex:paper_ciuca2023chasing ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was" ;
+  rs:object ex:concept_gas_rich ;
+  rs:direction rs:positive ;
+  rs:dataset "APOGEE DR17" ;
+  rs:population "Milky Way disc" ;
+  rs:method "Bayesian ML stellar ages (BINGO)" ;
+  rs:sample_size "68360"^^xsd:decimal ;
+  rs:statement "Ages of 68,360 APOGEE giants show a metallicity dip then enrichment consistent with a gas-rich GSE merger." .
+
+ex:claim_C08 a rs:Claim ;
+  rs:statedIn ex:paper_valenzuela2023galaxy ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "was" ;
+  rs:object ex:concept_gas_rich ;
+  rs:direction rs:positive ;
+  rs:dataset "Milky Way globular clusters" ;
+  rs:population "Milky Way globular clusters" ;
+  rs:method "GC age distributions + empirical GC model" ;
+  rs:statement "Younger GSE-associated globular clusters formed during the merger, a signature of a wet (gas-rich) merger." .
+
+ex:claim_C09 a rs:Claim ;
+  rs:statedIn ex:paper_grand2020dual ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "built" ;
+  rs:object ex:concept_thick_disc ;
+  rs:direction rs:positive ;
+  rs:dataset "Auriga simulations" ;
+  rs:population "Milky Way analogues" ;
+  rs:method "cosmological MHD simulations" ;
+  rs:statement "The merger-induced starburst rapidly forms a compact thick disc." .
+
+ex:claim_C10 a rs:Claim ;
+  rs:statedIn ex:paper_ciuca2023chasing ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "built" ;
+  rs:object ex:concept_thick_disc ;
+  rs:direction rs:positive ;
+  rs:dataset "APOGEE DR17" ;
+  rs:population "Milky Way disc" ;
+  rs:method "Bayesian ML stellar ages (BINGO)" ;
+  rs:statement "GSE's starburst built the metal-rich part of the thick disc early on." .
+
+ex:claim_C11 a rs:Claim ;
+  rs:statedIn ex:paper_naidu2021reconstructing ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "built" ;
+  rs:object ex:concept_stellar_halo ;
+  rs:direction rs:positive ;
+  rs:dataset "H3 Survey" ;
+  rs:population "Milky Way halo" ;
+  rs:method "N-body simulations fitted to survey data" ;
+  rs:unit "% of halo" ;
+  rs:value "50"^^xsd:decimal ;
+  rs:statement "GSE delivered about half of the Milky Way's stellar halo." .
+
+ex:claim_C12 a rs:Claim ;
+  rs:statedIn ex:paper_belokurov2018formation ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "built" ;
+  rs:object ex:concept_stellar_halo ;
+  rs:direction rs:positive ;
+  rs:dataset "Gaia + SDSS" ;
+  rs:population "Milky Way halo" ;
+  rs:method "halo kinematics + zoom-in simulations" ;
+  rs:statement "The radially anisotropic inner halo was deposited by one major accretion event." .
+
+ex:claim_C13 a rs:Claim ;
+  rs:statedIn ex:paper_plevne2025estimating ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "built" ;
+  rs:object ex:concept_stellar_halo ;
+  rs:direction rs:positive ;
+  rs:dataset "APOGEE + Gaia DR3" ;
+  rs:population "Milky Way halo" ;
+  rs:method "HDBSCAN selection + OMEGA+ chemical evolution model" ;
+  rs:statement "GSE contributed a significant fraction of the metal-poor halo." .
+
+ex:claim_C14 a rs:Claim ;
+  rs:statedIn ex:paper_ernandes2024gaia ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "had" ;
+  rs:object ex:concept_extended_star_formation ;
+  rs:direction rs:positive ;
+  rs:dataset "SAGA database" ;
+  rs:population "GSE member stars" ;
+  rs:method "[Eu/Mg], [Ba/Mg] abundance trends vs dwarf galaxies" ;
+  rs:statement "Neutron-capture abundances show GSE star formation started gradually and lasted over 2 Gyr." .
+
+ex:claim_C15 a rs:Claim ;
+  rs:statedIn ex:paper_plevne2025estimating ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "had" ;
+  rs:object ex:concept_extended_star_formation ;
+  rs:direction rs:negative ;
+  rs:dataset "APOGEE + Gaia DR3" ;
+  rs:population "GSE member stars" ;
+  rs:method "HDBSCAN selection + OMEGA+ chemical evolution model" ;
+  rs:statement "The best chemical-evolution model needs a short star-formation timescale with strong outflows." .
+
+ex:claim_C16 a rs:Claim ;
+  rs:statedIn ex:paper_haywood2018disguise ;
+  rs:subject ex:concept_in_situ_stellar_halo ;
+  rs:predicate "is detected in" ;
+  rs:object ex:concept_milky_way_survey_data ;
+  rs:direction rs:null ;
+  rs:dataset "Gaia DR2" ;
+  rs:population "solar-neighbourhood halo" ;
+  rs:method "colour–magnitude dual sequence + orbits" ;
+  rs:statement "Gaia DR2 halo stars split into accreted stars and heated old disc; no in-situ halo population is robustly identified." .
+
+ex:claim_C17 a rs:Claim ;
+  rs:statedIn ex:paper_belokurov2022dawn ;
+  rs:subject ex:concept_in_situ_stellar_halo ;
+  rs:predicate "is detected in" ;
+  rs:object ex:concept_milky_way_survey_data ;
+  rs:direction rs:positive ;
+  rs:dataset "APOGEE DR17 + Gaia EDR3" ;
+  rs:population "solar-neighbourhood halo" ;
+  rs:method "[Al/Fe]-selected in-situ sample" ;
+  rs:statement "Aluminium abundances isolate a metal-poor in-situ component, 'Aurora', born before the disc spun up." .
+
+ex:claim_C18 a rs:Claim ;
+  rs:statedIn ex:paper_merrow2024did ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "triggered" ;
+  rs:object ex:concept_milky_way_bar ;
+  rs:direction rs:positive ;
+  rs:dataset "Auriga simulations" ;
+  rs:population "Milky Way analogues" ;
+  rs:method "cosmological simulation re-run without the merger" ;
+  rs:statement "In Auriga, a GSE-like merger triggers bar formation within 1 Gyr; removing it delays the bar by about 2 Gyr." .
+
+ex:claim_C19 a rs:Claim ;
+  rs:statedIn ex:paper_deng2024potential ;
+  rs:subject ex:concept_gaia_sausage_enceladus ;
+  rs:predicate "caused" ;
+  rs:object ex:concept_galactic_disc_warp ;
+  rs:direction rs:positive ;
+  rs:dataset "GIZMO simulation" ;
+  rs:population "Milky Way disc" ;
+  rs:method "hydrodynamic merger simulation" ;
+  rs:statement "A gas-rich GSE merger simulation reproduces the Galactic disc warp." .
+
+ex:claim_C20 a rs:Claim ;
+  rs:statedIn ex:paper_massari2026evidence ;
+  rs:subject ex:concept_milky_way ;
+  rs:predicate "experienced" ;
+  rs:object ex:concept_pre_gse_major_merger ;
+  rs:direction rs:positive ;
+  rs:dataset "HST globular cluster photometry" ;
+  rs:population "Milky Way globular clusters" ;
+  rs:method "relative GC ages" ;
+  rs:statement "Globular-cluster ages reveal another merger of similar mass about 1.8 Gyr before GSE (Low-energy-Kraken-Heracles)." .
+
+ex:claim_C21 a rs:Claim ;
+  rs:statedIn ex:paper_matsuno2021process ;
+  rs:subject ex:concept_gaia_sausage_enceladus_stars ;
+  rs:predicate "exceeds" ;
+  rs:object ex:concept_in_situ_stars ;
+  rs:direction rs:positive ;
+  rs:metric "[Eu/Mg]" ;
+  rs:dataset "GALAH DR3" ;
+  rs:population "halo stars" ;
+  rs:method "kinematic selection + Eu abundances" ;
+  rs:sample_size "102"^^xsd:decimal ;
+  rs:statement "GSE stars have higher [Eu/Mg] than in-situ stars." .
+
+ex:concept_extended_star_formation a rs:Concept ; dct:title "extended star formation" .
+ex:concept_gaia_sausage_enceladus a rs:Concept ; dct:title "gaia-sausage-enceladus" .
+ex:concept_gaia_sausage_enceladus_stars a rs:Concept ; dct:title "gaia-sausage-enceladus stars" .
+ex:concept_galactic_disc_warp a rs:Concept ; dct:title "galactic disc warp" .
+ex:concept_gas_rich a rs:Concept ; dct:title "gas-rich" .
+ex:concept_in_situ_stars a rs:Concept ; dct:title "in-situ stars" .
+ex:concept_in_situ_stellar_halo a rs:Concept ; dct:title "in-situ stellar halo" .
+ex:concept_major_merger a rs:Concept ; dct:title "major merger" .
+ex:concept_milky_way a rs:Concept ; dct:title "milky way" .
+ex:concept_milky_way_bar a rs:Concept ; dct:title "milky way bar" .
+ex:concept_milky_way_survey_data a rs:Concept ; dct:title "milky way survey data" .
+ex:concept_pre_gse_major_merger a rs:Concept ; dct:title "pre-gse major merger" .
+ex:concept_stellar_halo a rs:Concept ; dct:title "stellar halo" .
+ex:concept_thick_disc a rs:Concept ; dct:title "thick disc" .
+
+ex:claim_C02 rs:conflictsWith ex:claim_C04 .
+ex:claim_C03 rs:conflictsWith ex:claim_C04 .
+ex:claim_C04 rs:conflictsWith ex:claim_C01 .
+ex:claim_C14 rs:conflictsWith ex:claim_C15 .
+ex:claim_C04 rs:conflictsWith ex:claim_C05 .
+ex:claim_C16 rs:conflictsWith ex:claim_C17 .
+ex:claim_C06 rs:agreesWith ex:claim_C07 .
+ex:claim_C06 rs:agreesWith ex:claim_C08 .
+ex:claim_C07 rs:agreesWith ex:claim_C08 .
+ex:claim_C02 rs:agreesWith ex:claim_C03 .
+ex:claim_C02 rs:agreesWith ex:claim_C01 .
+ex:claim_C02 rs:agreesWith ex:claim_C05 .
+ex:claim_C03 rs:agreesWith ex:claim_C01 .
+ex:claim_C03 rs:agreesWith ex:claim_C05 .
+ex:claim_C01 rs:agreesWith ex:claim_C05 .
+ex:claim_C12 rs:agreesWith ex:claim_C11 .
+ex:claim_C12 rs:agreesWith ex:claim_C13 .
+ex:claim_C11 rs:agreesWith ex:claim_C13 .
+ex:claim_C09 rs:agreesWith ex:claim_C10 .

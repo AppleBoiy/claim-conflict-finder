@@ -4,6 +4,16 @@ See where research papers disagree — and whether different datasets, populatio
 
 A free, open-source [agent skill](https://www.agensi.io/learn/skill-md-format) (SKILL.md) for students and researchers. Works with Claude Code, Codex CLI, Cursor, Gemini CLI and any agent that supports the SKILL.md standard.
 
+## Screenshots
+
+![Evidence matrix: relationships × papers, with consensus and disputed rows](docs/screenshots/evidence-matrix.png)
+
+| A conflict card: two claims side by side, context differences highlighted | Dark mode | Mobile |
+|---|---|---|
+| ![Conflict card](docs/screenshots/conflict-card.png) | ![Conflict cards in dark mode](docs/screenshots/cards-dark.png) | <img src="docs/screenshots/mobile.png" alt="Mobile view" width="220"> |
+
+*Real output, not a mock-up:* a run on the question **“How are galaxy merger histories reconstructed from stellar data?”** (OpenAlex + arXiv, 114 papers). The files are in [`examples/milky-way-mergers/`](examples/milky-way-mergers/) — download `conflict_map.html` and open it in a browser.
+
 ## What it does
 
 1. The agent reads each paper and records its main findings as **structured claims**: subject, relation, object, direction (▲ ▼ ● ◆), metric and values, dataset, population, method, conditions, a ≤25-word verbatim quote and where it came from.
